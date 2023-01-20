@@ -1,0 +1,25 @@
+.section-heading-section-heading {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-threeunits);
+  flex-direction: column;
+}
+.section-heading-text {
+  text-align: center;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.section-heading-text1 {
+  color: var(--dl-color-gray-black60);
+  text-align: center;
+  line-height: 24px;
+}
+
+
+@media(max-width: 1200px) {
+  .section-heading-root-class-name1 {
+    align-self: center;
+    margin-top: var(--dl-space-space-twounits);
+    margin-bottom: 0px;
+  }
+}

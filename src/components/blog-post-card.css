@@ -1,0 +1,94 @@
+.blog-post-card-blog-post-card {
+  width: 100%;
+  height: 510px;
+  display: flex;
+  position: relative;
+  max-width: 400px;
+  align-self: stretch;
+  transition: 0.3s;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blog-post-card-blog-post-card:hover {
+  transform: scale(1.02);
+}
+.blog-post-card-image {
+  width: 100%;
+  height: 283px;
+  object-fit: cover;
+}
+.blog-post-card-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-halfunit);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: space-between;
+  background-color: var(--dl-color-gray-white);
+}
+.blog-post-card-text {
+  color: var(--dl-color-gray-black80);
+  font-size: 22px;
+  font-style: normal;
+  margin-top: var(--dl-space-space-unit);
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.blog-post-card-text1 {
+  color: var(--dl-color-gray-black50);
+  font-size: 16px;
+  font-style: normal;
+  margin-bottom: var(--dl-space-space-twounits);
+}
+
+
+@media(max-width: 991px) {
+  .blog-post-card-blog-post-card {
+    max-width: 48%;
+  }
+}
+@media(max-width: 767px) {
+  .blog-post-card-blog-post-card {
+    max-width: 100%;
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+  }
+  .blog-post-card-root-class-name {
+    width: auto;
+    max-width: auto;
+  }
+  .blog-post-card-root-class-name1 {
+    flex: 1;
+    width: auto;
+    max-width: auto;
+  }
+}
+@media(max-width: 479px) {
+  .blog-post-card-blog-post-card {
+    width: auto;
+  }
+  .blog-post-card-image {
+    width: auto;
+  }
+  .blog-post-card-container {
+    width: auto;
+    align-self: flex-start;
+  }
+  .blog-post-card-root-class-name {
+    width: auto;
+    max-width: auto;
+    align-self: center;
+  }
+  .blog-post-card-root-class-name1 {
+    width: auto;
+    height: auto;
+    max-width: auto;
+    min-width: var(--dl-size-size-xsmall);
+    align-self: center;
+  }
+}
